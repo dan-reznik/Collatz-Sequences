@@ -47,16 +47,17 @@ collatz <- function(x,y) if (x%in%c(1L,2L)) done(1L) else if (even(x)) x/2L else
 get_seq_seq <- function(x) (1L:10000L)%>%accumulate(collatz,.init=x)%>%as.integer
 ```
 
-Compute (in parallel) first 1 million Collatz sequences, and show them for N=20...30
+Compute (in parallel) first 100k Collatz sequences, and show them for N=20...30
 
 ```{r}
 fname_coll <- "data/df_coll.rds"
+n_max <- 100e3
 tic()
 if (file_exists(fname_coll)) { # avoid long calc w/ knitr
   df_coll <- read_rds(fname_coll)
 } else {
   plan(multiprocess)
-  df_coll <- tibble(n=1:10^5,
+  df_coll <- tibble(n=1:n_max,
                     coll=n%>%future_map(get_seq_seq),
                     seq_s=coll%>%map_chr(str_c,collapse=";"),
                     seq_max=coll%>%map_int(max),
