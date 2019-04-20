@@ -1,0 +1,10 @@
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ [K]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ ls
+collatz.nb.html  Collatz.Rproj  [0m[01;35mn27_log.png[0m  [01;35msteps_required.png[0m
+collatz.Rmd      df_coll.csv    [01;35mn27.png[0m      [01;35mtrailing_zero_mean.png[0m
+[K]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git commit -m "first commit"
+fatal: not a git repository (or any of the parent directories): .git
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git remote add origin git@github.coom:dan-reznik/Collatz-Sequences.git
+fatal: not a git repository (or any of the parent directories): .git
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git push -u origin master[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit init
+Initialized empty Git repository in /home/dreznik/Dropbox/Data Science/R Projects/Collatz/.git/
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git init[K[K[K[K[K[K[K[Kgit add .

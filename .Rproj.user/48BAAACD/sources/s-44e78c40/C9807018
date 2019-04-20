@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1555787075363.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C9807018",
+    "lastKnownWriteTime" : 1555635450,
+    "last_content_update" : 1555635450,
+    "path" : "~/Dropbox/Data Science/R Projects/OLX Scraper/README.Rmd",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "15,3",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

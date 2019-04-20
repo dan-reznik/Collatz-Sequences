@@ -1,0 +1,116 @@
+---
+title: "Collatz Sequences"
+author: Dan Reznik
+date: April, 2019
+output: github_document
+---
+
+```{r,echo=F}
+knitr::opts_chunk$set(
+  cache=T,
+  collapse=T,
+  comment="#>",
+  dpi=96,
+  fig.align="center",
+  out.width='100%'
+)
+```
+
+Load libraries
+
+```{r,message=F}
+library(tidyverse)
+library(gtools)
+```
+
+Calculate Collatz sequence with `purrr::accumulate()`
+
+```{r}
+collatz <- function(x,y) if (x%in%c(1L,2L)) done(1L) else if (even(x)) x/2L else 3L*x+1L
+get_seq_seq <- function(x) (1L:1000L)%>%accumulate(collatz,.init=x)%>%as.integer
+```
+
+Create data frame of first 10^3 collatz sequences
+
+```{r}
+n_max <- 1e3
+df_coll <- tibble(n=1:n_max,
+                  coll=n%>%map(get_seq_seq),
+                  seq_s=coll%>%map_chr(str_c,collapse=";"),
+                  seq_max=coll%>%map_int(max),
+                  seq_l=coll%>%map_int(length)) %>%
+  select(n,seq_l,seq_max,seq_s)
+```
+
+```{r,echo=F}
+df_coll %>% slice(20:30) %>% knitr::kable()
+```
+
+Save it to RDS
+
+```{r,eval==F}
+df_coll %>% write_rds("data/df_coll.rds",compress = "bz")
+```
+
+The N=27 sequence
+
+```{r}
+coll27 <- df_coll%>%filter(n==27)%>%pull(seq_s)
+tibble(x=coll27%>%str_split(";")%>%first%>%as.integer)%>%mutate(i=row_number()) %>%
+  ggplot(aes(i,x))+
+  geom_line(color="blue") + geom_point(color="black") +
+  scale_y_log10() + 
+  labs(title="N=27",
+       y="collatz[i] (log scale)",x="Iteration")
+```
+
+Plot sequence lengths vs starting N
+
+```{r}
+df_coll %>%
+  ggplot(aes(n,seq_l)) +
+  geom_line(alpha=.2) +
+  geom_smooth() +
+  labs(x='starting N',y='sequence length')
+```
+
+Plot density of sequence lengths divided by starting N
+
+```{r,message=F}
+df_coll %>%
+  ggplot(aes(seq_l/n)) +
+  geom_freqpoly(aes(y = ..density..)) +
+  scale_x_log10() +
+  labs(x='seq_length/starting N',
+       y='density')
+```
+
+```{r,include=F}
+ggsave("pics/steps_required.png",width=10,height=4)
+```
+
+Mean of length/n
+
+```{r}
+map2_dbl(df_coll$seq_l,df_coll$n,~.x/.y)%>%mean
+```
+
+Median of length/n
+
+```{r}
+map2_dbl(df_coll$seq_l,df_coll$n,~.x/.y)%>%median
+```
+
+Top ten ratios of sequence lengths by starting N
+
+```{r}
+df_coll %>%
+  mutate(ratio=seq_l/n) %>%
+  arrange(desc(ratio)) %>% 
+  head(10) %>%
+  mutate(rank=row_number(),ratio=round(ratio,2)) %>%
+  select(rank,n,seq_l,ratio,everything()) %>%
+  knitr::kable()
+```
+
+

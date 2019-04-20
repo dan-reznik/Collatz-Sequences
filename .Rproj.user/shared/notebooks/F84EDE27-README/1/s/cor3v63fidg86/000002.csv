@@ -1,0 +1,7 @@
+"0","coll27 <- df_coll%>%filter(n==27)%>%pull(coll_s)"
+"0","tibble(x=coll27%>%str_split("";"")%>%first%>%as.integer)%>%mutate(i=row_number()) %>%"
+"0","  ggplot(aes(i,x))+"
+"0","  geom_line(color=""blue"") + geom_point(color=""black"") +"
+"0","  scale_y_log10() + "
+"0","  labs(title=""Collatz Sequence"",subtitle = ""N=27"","
+"0","       y=""N, log scale"",x=""Iteration"")"
