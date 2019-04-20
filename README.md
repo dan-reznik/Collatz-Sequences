@@ -3,12 +3,12 @@ Collatz Sequences
 Dan Reznik
 April 2019
 
-A Collatz *Sequence* starts with N, a positive integer. Each term is obtained from the previous term as follows:
+A Collatz *Sequence* starts with N, a positive integer. The next term in the sequence is obtained from the current one as follows:
 
--   If the current term is even, the next term is one half the previous term.
--   If the current term is odd, the next term is 3 times the previous term plus 1.
+-   If current is even, next is half the current: `coll[i+1] = coll[i]/2`
+-   If current is odd, next is 3 times the current plus 1: `coll[i+1] = 3*coll[i]+1`
 
-The Collatz *Conjecture* states that no matter what value of n, the sequence will always reach 1, as explained [here](https://en.wikipedia.org/wiki/Collatz_conjecture).
+The Collatz *Conjecture* states that for all starting N's, the sequence will always reach 1, explained [here](https://en.wikipedia.org/wiki/Collatz_conjecture).
 
 Below we investigate basics of Collatz sequences with starting N from 1 to 10k, namely:
 
