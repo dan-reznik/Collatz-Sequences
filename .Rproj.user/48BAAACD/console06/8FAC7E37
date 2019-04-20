@@ -151,3 +151,47 @@ To github.com:dan-reznik/Collatz-Sequences.git
 Collatz.Rproj  [0m[01;34mdata[0m  [01;34mpics[0m  [01;34mREADME_cache[0m  [01;34mREADME_files[0m  README.md  README.Rmd
 ]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ rm -rf README_cache
 ]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git add .
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git commite -m "[K[K[K[K[K[K -m "delete cache"
+[master 9f15da8] delete cache
+ 29 files changed, 4 insertions(+), 12 deletions(-)
+ delete mode 100644 README_cache/markdown_github/__packages
+ delete mode 100644 README_cache/markdown_github/eval==F_fc8545b1d5136163a5146dffcc040dee.RData
+ delete mode 100644 README_cache/markdown_github/eval==F_fc8545b1d5136163a5146dffcc040dee.rdb
+ delete mode 100644 README_cache/markdown_github/eval==F_fc8545b1d5136163a5146dffcc040dee.rdx
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-12_51b4b9e5565d27ba4e70cbd2509ac930.RData
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-12_51b4b9e5565d27ba4e70cbd2509ac930.rdb
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-12_51b4b9e5565d27ba4e70cbd2509ac930.rdx
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-2_1cca9acadea30f5947d52656eddc8a7f.RData
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-2_1cca9acadea30f5947d52656eddc8a7f.rdb
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-2_1cca9acadea30f5947d52656eddc8a7f.rdx
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-3_364ab869d7734c8ec8def35dab01c08d.RData
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-3_364ab869d7734c8ec8def35dab01c08d.rdb
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-3_364ab869d7734c8ec8def35dab01c08d.rdx
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-5_588493418c3ad95abb4d28f975690637.RData
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-5_588493418c3ad95abb4d28f975690637.rdb
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-5_588493418c3ad95abb4d28f975690637.rdx
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-6_ba9cf3b30a873635408608776531ee5e.RData
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-6_ba9cf3b30a873635408608776531ee5e.rdb
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-6_ba9cf3b30a873635408608776531ee5e.rdx
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-7_c5130420a80405f8f78329dbf91ef5f0.RData
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-7_c5130420a80405f8f78329dbf91ef5f0.rdb
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-7_c5130420a80405f8f78329dbf91ef5f0.rdx
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-8_d9b8ca6a7261ba51ba8c71e9f43d0fab.RData
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-8_d9b8ca6a7261ba51ba8c71e9f43d0fab.rdb
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-8_d9b8ca6a7261ba51ba8c71e9f43d0fab.rdx
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-9_95c0e3d13dbf39748d85310d5488e192.RData
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-9_95c0e3d13dbf39748d85310d5488e192.rdb
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-9_95c0e3d13dbf39748d85310d5488e192.rdx
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git push
+Enter passphrase for key '/home/dreznik/.ssh/id_rsa': 
+Counting objects: 15, done.
+Delta compression using up to 2 threads.
+Compressing objects:   7% (1/14)   Compressing objects:  14% (2/14)   Compressing objects:  21% (3/14)   Compressing objects:  28% (4/14)   Compressing objects:  35% (5/14)   Compressing objects:  42% (6/14)   Compressing objects:  50% (7/14)   Compressing objects:  57% (8/14)   Compressing objects:  64% (9/14)   Compressing objects:  71% (10/14)   Compressing objects:  78% (11/14)   Compressing objects:  85% (12/14)   Compressing objects:  92% (13/14)   Compressing objects: 100% (14/14)   Compressing objects: 100% (14/14), done.
+Writing objects:   6% (1/15)   Writing objects:  13% (2/15)   Writing objects:  20% (3/15)   Writing objects:  26% (4/15)   Writing objects:  33% (5/15)   Writing objects:  40% (6/15)   Writing objects:  46% (7/15)   Writing objects:  53% (8/15)   Writing objects:  60% (9/15)   Writing objects:  66% (10/15)   Writing objects:  73% (11/15)   Writing objects:  80% (12/15)   Writing objects:  86% (13/15)   Writing objects:  93% (14/15)   Writing objects: 100% (15/15)   Writing objects: 100% (15/15), 1.94 KiB | 180.00 KiB/s, done.
+Total 15 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/6)   [Kremote: Resolving deltas:  33% (2/6)   [Kremote: Resolving deltas:  66% (4/6)   [Kremote: Resolving deltas:  83% (5/6)   [Kremote: Resolving deltas: 100% (6/6)   [Kremote: Resolving deltas: 100% (6/6), completed with 4 local objects.[K
+To github.com:dan-reznik/Collatz-Sequences.git
+   ced7358..9f15da8  master -> master
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ ls
+Collatz.Rproj  [0m[01;34mdata[0m  [01;34mpics[0m  [01;34mREADME_files[0m  README.md  README.Rmd
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ 
