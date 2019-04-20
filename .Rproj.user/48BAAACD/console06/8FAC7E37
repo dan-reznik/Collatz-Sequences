@@ -109,3 +109,27 @@ To github.com:dan-reznik/Collatz-Sequences.git
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git add .
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git commit =[K-, "2n[K[K[K[K[K[Km[K-m "2nd commit"
+[master 3076a89] 2nd commit
+ 18 files changed, 177 insertions(+), 42 deletions(-)
+ create mode 100644 .gitignore
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-10_6593c437abdc10649f7896dabb53b17a.RData
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-10_6593c437abdc10649f7896dabb53b17a.rdb
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-10_6593c437abdc10649f7896dabb53b17a.rdx
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-11_9eb808d26679be641217f95a677bb123.RData
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-11_9eb808d26679be641217f95a677bb123.rdb
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-11_9eb808d26679be641217f95a677bb123.rdx
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-4_a0ccee85b291741fba347a4a352a8d40.RData
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-4_a0ccee85b291741fba347a4a352a8d40.rdb
+ delete mode 100644 README_cache/markdown_github/unnamed-chunk-4_a0ccee85b291741fba347a4a352a8d40.rdx
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git push
+Enter passphrase for key '/home/dreznik/.ssh/id_rsa': 
+Counting objects: 18, done.
+Delta compression using up to 2 threads.
+Compressing objects:   6% (1/16)   Compressing objects:  12% (2/16)   Compressing objects:  18% (3/16)   Compressing objects:  25% (4/16)   Compressing objects:  31% (5/16)   Compressing objects:  37% (6/16)   Compressing objects:  43% (7/16)   Compressing objects:  50% (8/16)   Compressing objects:  56% (9/16)   Compressing objects:  62% (10/16)   Compressing objects:  68% (11/16)   Compressing objects:  75% (12/16)   Compressing objects:  81% (13/16)   Compressing objects:  87% (14/16)   Compressing objects:  93% (15/16)   Compressing objects: 100% (16/16)   Compressing objects: 100% (16/16), done.
+Writing objects:   5% (1/18)   Writing objects:  11% (2/18)   Writing objects:  16% (3/18)   Writing objects:  22% (4/18)   Writing objects:  27% (5/18)   Writing objects:  33% (6/18)   Writing objects:  38% (7/18)   Writing objects:  44% (8/18)   Writing objects:  50% (9/18)   Writing objects:  55% (10/18)   Writing objects:  61% (11/18)   Writing objects:  66% (12/18)   Writing objects:  72% (13/18)   Writing objects:  77% (14/18)   Writing objects:  83% (15/18)   Writing objects:  88% (16/18)   Writing objects:  94% (17/18)   Writing objects: 100% (18/18)   Writing objects: 100% (18/18), 5.18 KiB | 1.73 MiB/s, done.
+Total 18 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/7)   [Kremote: Resolving deltas:  14% (1/7)   [Kremote: Resolving deltas:  28% (2/7)   [Kremote: Resolving deltas:  42% (3/7)   [Kremote: Resolving deltas:  57% (4/7)   [Kremote: Resolving deltas:  71% (5/7)   [Kremote: Resolving deltas:  85% (6/7)   [Kremote: Resolving deltas: 100% (7/7)   [Kremote: Resolving deltas: 100% (7/7), completed with 7 local objects.[K
+To github.com:dan-reznik/Collatz-Sequences.git
+   8a54a27..3076a89  master -> master
+git add .
