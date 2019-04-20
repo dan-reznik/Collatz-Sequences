@@ -1,2 +1,16 @@
 
-]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ 
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ [K]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git pull
+Enter passphrase for key '/home/dreznik/.ssh/id_rsa': 
+remote: Enumerating objects: 13, done.[K
+remote: Counting objects:   7% (1/13)   [Kremote: Counting objects:  15% (2/13)   [Kremote: Counting objects:  23% (3/13)   [Kremote: Counting objects:  30% (4/13)   [Kremote: Counting objects:  38% (5/13)   [Kremote: Counting objects:  46% (6/13)   [Kremote: Counting objects:  53% (7/13)   [Kremote: Counting objects:  61% (8/13)   [Kremote: Counting objects:  69% (9/13)   [Kremote: Counting objects:  76% (10/13)   [Kremote: Counting objects:  84% (11/13)   [Kremote: Counting objects:  92% (12/13)   [Kremote: Counting objects: 100% (13/13)   [Kremote: Counting objects: 100% (13/13), done.[K
+remote: Compressing objects:  16% (1/6)   [Kremote: Compressing objects:  33% (2/6)   [Kremote: Compressing objects:  50% (3/6)   [Kremote: Compressing objects:  66% (4/6)   [Kremote: Compressing objects:  83% (5/6)   [Kremote: Compressing objects: 100% (6/6)   [Kremote: Compressing objects: 100% (6/6), done.[K
+remote: Total 9 (delta 3), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  11% (1/9)   Unpacking objects:  22% (2/9)   Unpacking objects:  33% (3/9)   Unpacking objects:  44% (4/9)   Unpacking objects:  55% (5/9)   Unpacking objects:  66% (6/9)   Unpacking objects:  77% (7/9)   Unpacking objects:  88% (8/9)   Unpacking objects: 100% (9/9)   Unpacking objects: 100% (9/9), done.
+From github.com:dan-reznik/Collatz-Sequences
+   0c6ffb4..0948fda  master     -> origin/master
+Updating 0c6ffb4..0948fda
+error: Your local changes to the following files would be overwritten by merge:
+	.Rproj.user/48BAAACD/console06/8FAC7E37
+Please commit your changes or stash them before you merge.
+Aborting
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git add .
