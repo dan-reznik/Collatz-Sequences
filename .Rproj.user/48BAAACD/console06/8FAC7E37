@@ -14,3 +14,34 @@ error: Your local changes to the following files would be overwritten by merge:
 Please commit your changes or stash them before you merge.
 Aborting
 ]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git add .
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ c[Kgit commit -m "post pull"
+[master eb99107] post pull
+ 1 file changed, 15 insertions(+), 1 deletion(-)
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git push
+Enter passphrase for key '/home/dreznik/.ssh/id_rsa': 
+To github.com:dan-reznik/Collatz-Sequences.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:dan-reznik/Collatz-Sequences.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git pull
+Enter passphrase for key '/home/dreznik/.ssh/id_rsa': 
+error: Your local changes to the following files would be overwritten by merge:
+	.Rproj.user/48BAAACD/console06/8FAC7E37
+Please commit your changes or stash them before you merge.
+Aborting
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git push for[K[K[K--force
+Enter passphrase for key '/home/dreznik/.ssh/id_rsa': 
+Counting objects: 6, done.
+Delta compression using up to 2 threads.
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 1.05 KiB | 1.05 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To github.com:dan-reznik/Collatz-Sequences.git
+ + 0948fda...eb99107 master -> master (forced update)
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ ls -l .Rproj.user/[K]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ ls -l .Rproj..user/gitignor [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ r [Km .gitignore 
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ [K]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ [K]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ 
