@@ -1,6 +1,0 @@
-"0","df_coll <- tibble(n=1:1e3,"
-"0","                      coll=n%>%map(get_coll_seq),"
-"0","                      coll_s=coll%>%map_chr(str_c,collapse="";""),"
-"0","                      coll_max=coll%>%map_int(max),"
-"0","                      coll_l=coll%>%map_int(length)) %>%"
-"0","  select(n,coll_l,coll_max,coll_s)"
