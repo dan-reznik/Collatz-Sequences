@@ -24,7 +24,7 @@ knitr::opts_chunk$set(
   cache=T,
   collapse=T,
   comment="#>",
-  dpi=96,
+  dpi=300,
   fig.align="center",
   out.width='100%'
 )
@@ -34,36 +34,44 @@ Load libraries
 
 ```{r,message=F}
 library(tidyverse)
-library(gtools)
+library(gtools) # for even()
+library(furrr)
+library(tictoc)
+library(fs)
 ```
 
 Calculate Collatz sequence with `purrr::accumulate()`
 
 ```{r}
 collatz <- function(x,y) if (x%in%c(1L,2L)) done(1L) else if (even(x)) x/2L else 3L*x+1L
-get_seq_seq <- function(x) (1L:1000L)%>%accumulate(collatz,.init=x)%>%as.integer
+get_seq_seq <- function(x) (1L:10000L)%>%accumulate(collatz,.init=x)%>%as.integer
 ```
 
-Create data frame of first 10^3 collatz sequences, and show them for N=20...30
+Compute (in parallel) first 1 million Collatz sequences, and show them for N=20...30
 
 ```{r}
-n_max <- 10e3
-df_coll <- tibble(n=1:n_max,
-                  coll=n%>%map(get_seq_seq),
-                  seq_s=coll%>%map_chr(str_c,collapse=";"),
-                  seq_max=coll%>%map_int(max),
-                  seq_l=coll%>%map_int(length)) %>%
-  select(n,seq_l,seq_max,seq_s)
+fname_coll <- "data/df_coll.rds"
+tic()
+if (file_exists(fname_coll)) { # avoid long calc w/ knitr
+  df_coll <- read_rds(fname_coll)
+} else {
+  plan(multiprocess)
+  df_coll <- tibble(n=1:10^5,
+                    coll=n%>%future_map(get_seq_seq),
+                    seq_s=coll%>%map_chr(str_c,collapse=";"),
+                    seq_max=coll%>%map_int(max),
+                    seq_l=coll%>%map_int(length)) %>%
+    select(n,seq_l,seq_max,seq_s)
+  # Save it to RDS
+  df_coll %>% write_rds(fname_coll,compress = "bz")
+}
+toc()
 ```
 
 ```{r,echo=F}
-df_coll %>% slice(20:30) %>% knitr::kable()
-```
-
-Save it to RDS
-
-```{r,eval==F}
-df_coll %>% write_rds("data/df_coll.rds",compress = "bz")
+df_coll %>%
+  slice(20:30) %>%
+  knitr::kable()
 ```
 
 The N=27 sequence
@@ -88,21 +96,6 @@ df_coll %>%
   labs(x='starting N',y='sequence length')
 ```
 
-Plot density of sequence lengths divided by starting N
-
-```{r,message=F}
-df_coll %>%
-  ggplot(aes(seq_l/n)) +
-  geom_freqpoly(aes(y = ..density..)) +
-  scale_x_log10() +
-  labs(x='seq_length/starting N',
-       y='density')
-```
-
-```{r,include=F}
-ggsave("pics/steps_required.png",width=10,height=4)
-```
-
 Mean and Median of length/n
 
 ```{r}
@@ -120,6 +113,21 @@ df_coll %>%
   mutate(rank=row_number(),ratio=round(ratio,2)) %>%
   select(rank,n,seq_l,ratio,everything()) %>%
   knitr::kable()
+```
+
+Plot density of sequence lengths divided by starting N. Can the mode be computed?
+
+```{r,message=F}
+df_coll %>%
+  ggplot(aes(seq_l/n)) +
+  geom_freqpoly(aes(y = ..density..)) +
+  scale_x_log10() +
+  labs(x='seq_length/starting N',
+       y='density')
+```
+
+```{r,include=F}
+ggsave("pics/steps_required.png",width=10,height=4)
 ```
 
 Happy Collatzing!
