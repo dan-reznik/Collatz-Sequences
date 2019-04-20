@@ -8,3 +8,104 @@ fatal: not a git repository (or any of the parent directories): .git
 ]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git push -u origin master[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit init
 Initialized empty Git repository in /home/dreznik/Dropbox/Data Science/R Projects/Collatz/.git/
 ]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git init[K[K[K[K[K[K[K[Kgit add .
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git commit -m "1st commit"
+[master (root-commit) 8a54a27] 1st commit
+ 79 files changed, 810 insertions(+)
+ create mode 100644 .Rhistory
+ create mode 100644 .Rproj.user/48BAAACD/console06/8FAC7E37
+ create mode 100644 .Rproj.user/48BAAACD/console06/8FAC7E37.env
+ create mode 100644 .Rproj.user/48BAAACD/console06/INDEX001
+ create mode 100644 .Rproj.user/48BAAACD/pcs/files-pane.pper
+ create mode 100644 .Rproj.user/48BAAACD/pcs/source-pane.pper
+ create mode 100644 .Rproj.user/48BAAACD/pcs/windowlayoutstate.pper
+ create mode 100644 .Rproj.user/48BAAACD/pcs/workbench-pane.pper
+ create mode 100644 .Rproj.user/48BAAACD/saved_source_markers
+ create mode 100644 .Rproj.user/48BAAACD/sources/prop/8A4BE4CE
+ create mode 100644 .Rproj.user/48BAAACD/sources/prop/9773175D
+ create mode 100644 .Rproj.user/48BAAACD/sources/prop/A8C67DD0
+ create mode 100644 .Rproj.user/48BAAACD/sources/prop/F562A19F
+ create mode 100644 .Rproj.user/48BAAACD/sources/prop/INDEX
+ create mode 100644 .Rproj.user/48BAAACD/sources/s-44e78c40/A94BAEB5
+ create mode 100644 .Rproj.user/48BAAACD/sources/s-44e78c40/A94BAEB5-contents
+ create mode 100644 .Rproj.user/48BAAACD/sources/s-44e78c40/C9807018
+ create mode 100644 .Rproj.user/48BAAACD/sources/s-44e78c40/C9807018-contents
+ create mode 100644 .Rproj.user/48BAAACD/sources/s-44e78c40/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/6C06F71D-collatz/1/48BAAACD44e78c40/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/6C06F71D-collatz/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/F84EDE27-README/1/48BAAACD44e78c40/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/F84EDE27-README/1/s/c8smf9e5zw9qr/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/F84EDE27-README/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/F84EDE27-README/1/s/cor3v63fidg86/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/F84EDE27-README/1/s/cor3v63fidg86/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/F84EDE27-README/1/s/cor3v63fidg86/000003.png
+ create mode 100644 .Rproj.user/shared/notebooks/F84EDE27-README/1/s/cor3v63fidg86/000003.snapshot
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 Collatz.Rproj
+ create mode 100644 README.Rmd
+ create mode 100644 README.md
+ create mode 100644 README_cache/markdown_github/__packages
+ create mode 100644 README_cache/markdown_github/eval==F_fc8545b1d5136163a5146dffcc040dee.RData
+ create mode 100644 README_cache/markdown_github/eval==F_fc8545b1d5136163a5146dffcc040dee.rdb
+ create mode 100644 README_cache/markdown_github/eval==F_fc8545b1d5136163a5146dffcc040dee.rdx
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-10_6593c437abdc10649f7896dabb53b17a.RData
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-10_6593c437abdc10649f7896dabb53b17a.rdb
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-10_6593c437abdc10649f7896dabb53b17a.rdx
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-11_9eb808d26679be641217f95a677bb123.RData
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-11_9eb808d26679be641217f95a677bb123.rdb
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-11_9eb808d26679be641217f95a677bb123.rdx
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-12_51b4b9e5565d27ba4e70cbd2509ac930.RData
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-12_51b4b9e5565d27ba4e70cbd2509ac930.rdb
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-12_51b4b9e5565d27ba4e70cbd2509ac930.rdx
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-2_1cca9acadea30f5947d52656eddc8a7f.RData
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-2_1cca9acadea30f5947d52656eddc8a7f.rdb
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-2_1cca9acadea30f5947d52656eddc8a7f.rdx
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-3_364ab869d7734c8ec8def35dab01c08d.RData
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-3_364ab869d7734c8ec8def35dab01c08d.rdb
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-3_364ab869d7734c8ec8def35dab01c08d.rdx
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-4_a0ccee85b291741fba347a4a352a8d40.RData
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-4_a0ccee85b291741fba347a4a352a8d40.rdb
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-4_a0ccee85b291741fba347a4a352a8d40.rdx
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-5_588493418c3ad95abb4d28f975690637.RData
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-5_588493418c3ad95abb4d28f975690637.rdb
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-5_588493418c3ad95abb4d28f975690637.rdx
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-6_ba9cf3b30a873635408608776531ee5e.RData
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-6_ba9cf3b30a873635408608776531ee5e.rdb
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-6_ba9cf3b30a873635408608776531ee5e.rdx
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-7_c5130420a80405f8f78329dbf91ef5f0.RData
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-7_c5130420a80405f8f78329dbf91ef5f0.rdb
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-7_c5130420a80405f8f78329dbf91ef5f0.rdx
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-8_d9b8ca6a7261ba51ba8c71e9f43d0fab.RData
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-8_d9b8ca6a7261ba51ba8c71e9f43d0fab.rdb
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-8_d9b8ca6a7261ba51ba8c71e9f43d0fab.rdx
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-9_95c0e3d13dbf39748d85310d5488e192.RData
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-9_95c0e3d13dbf39748d85310d5488e192.rdb
+ create mode 100644 README_cache/markdown_github/unnamed-chunk-9_95c0e3d13dbf39748d85310d5488e192.rdx
+ create mode 100644 README_files/figure-markdown_github/unnamed-chunk-6-1.png
+ create mode 100644 README_files/figure-markdown_github/unnamed-chunk-7-1.png
+ create mode 100644 README_files/figure-markdown_github/unnamed-chunk-8-1.png
+ create mode 100644 data/df_coll.csv
+ create mode 100644 data/df_coll.rds
+ create mode 100644 pics/n27.png
+ create mode 100644 pics/n27_log.png
+ create mode 100644 pics/steps_required.png
+ create mode 100644 pics/trailing_zero_mean.png
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git push[K[K[K[K[K[K[K[Kgit remote add origin git@github.coom:dan-reznik/Collatz-Sequences.git
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git push [K[K[K[K[K[K[K[K[Kgit push -u origin master
+Enter passphrase for key '/home/dreznik/.ssh/id_rsa': 
+Counting objects: 85, done.
+Delta compression using up to 2 threads.
+Compressing objects:   1% (1/72)   Compressing objects:   2% (2/72)   Compressing objects:   4% (3/72)   Compressing objects:   5% (4/72)   Compressing objects:   6% (5/72)   Compressing objects:   8% (6/72)   Compressing objects:   9% (7/72)   Compressing objects:  11% (8/72)   Compressing objects:  12% (9/72)   Compressing objects:  13% (10/72)   Compressing objects:  15% (11/72)   Compressing objects:  16% (12/72)   Compressing objects:  18% (13/72)   Compressing objects:  19% (14/72)   Compressing objects:  20% (15/72)   Compressing objects:  22% (16/72)   Compressing objects:  23% (17/72)   Compressing objects:  25% (18/72)   Compressing objects:  26% (19/72)   Compressing objects:  27% (20/72)   Compressing objects:  29% (21/72)   Compressing objects:  30% (22/72)   Compressing objects:  31% (23/72)   Compressing objects:  33% (24/72)   Compressing objects:  34% (25/72)   Compressing objects:  36% (26/72)   Compressing objects:  37% (27/72)   Compressing objects:  38% (28/72)   Compressing objects:  40% (29/72)   Compressing objects:  41% (30/72)   Compressing objects:  43% (31/72)   Compressing objects:  44% (32/72)   Compressing objects:  45% (33/72)   Compressing objects:  47% (34/72)   Compressing objects:  48% (35/72)   Compressing objects:  50% (36/72)   Compressing objects:  51% (37/72)   Compressing objects:  52% (38/72)   Compressing objects:  54% (39/72)   Compressing objects:  55% (40/72)   Compressing objects:  56% (41/72)   Compressing objects:  58% (42/72)   Compressing objects:  59% (43/72)   Compressing objects:  61% (44/72)   Compressing objects:  62% (45/72)   Compressing objects:  63% (46/72)   Compressing objects:  65% (47/72)   Compressing objects:  66% (48/72)   Compressing objects:  68% (49/72)   Compressing objects:  69% (50/72)   Compressing objects:  70% (51/72)   Compressing objects:  72% (52/72)   Compressing objects:  73% (53/72)   Compressing objects:  75% (54/72)   Compressing objects:  76% (55/72)   Compressing objects:  77% (56/72)   Compressing objects:  79% (57/72)   Compressing objects:  80% (58/72)   Compressing objects:  81% (59/72)   Compressing objects:  83% (60/72)   Compressing objects:  84% (61/72)   Compressing objects:  86% (62/72)   Compressing objects:  87% (63/72)   Compressing objects:  88% (64/72)   Compressing objects:  90% (65/72)   Compressing objects:  91% (66/72)   Compressing objects:  93% (67/72)   Compressing objects:  94% (68/72)   Compressing objects:  95% (69/72)   Compressing objects:  97% (70/72)   Compressing objects:  98% (71/72)   Compressing objects: 100% (72/72)   Compressing objects: 100% (72/72), done.
+Writing objects:   1% (1/85)   Writing objects:   2% (2/85)   Writing objects:   3% (3/85)   Writing objects:   4% (4/85)   Writing objects:   5% (5/85)   Writing objects:   7% (6/85)   Writing objects:   8% (7/85)   Writing objects:   9% (8/85)   Writing objects:  10% (9/85)   Writing objects:  11% (10/85)   Writing objects:  12% (11/85)   Writing objects:  14% (12/85)   Writing objects:  15% (13/85)   Writing objects:  16% (14/85)   Writing objects:  17% (15/85)   Writing objects:  18% (16/85)   Writing objects:  20% (17/85)   Writing objects:  21% (18/85)   Writing objects:  22% (19/85)   Writing objects:  23% (20/85)   Writing objects:  24% (21/85)   Writing objects:  25% (22/85)   Writing objects:  27% (23/85)   Writing objects:  28% (24/85)   Writing objects:  29% (25/85)   Writing objects:  30% (26/85)   Writing objects:  31% (27/85)   Writing objects:  32% (28/85)   Writing objects:  34% (29/85)   Writing objects:  35% (30/85)   Writing objects:  36% (31/85)   Writing objects:  37% (32/85)   Writing objects:  38% (33/85)   Writing objects:  40% (34/85)   Writing objects:  41% (35/85)   Writing objects:  42% (36/85)   Writing objects:  43% (37/85)   Writing objects:  44% (38/85)   Writing objects:  45% (39/85)   Writing objects:  47% (40/85)   Writing objects:  48% (41/85)   Writing objects:  49% (42/85)   Writing objects:  50% (43/85)   Writing objects:  51% (44/85)   Writing objects:  52% (45/85)   Writing objects:  54% (46/85)   Writing objects:  55% (47/85)   Writing objects:  56% (48/85)   Writing objects:  57% (49/85)   Writing objects:  58% (50/85)   Writing objects:  60% (51/85)   Writing objects:  61% (52/85)   Writing objects:  62% (53/85)   Writing objects:  63% (54/85)   Writing objects:  64% (55/85)   Writing objects:  67% (57/85)   Writing objects:  69% (59/85)   Writing objects:  70% (60/85)   Writing objects:  71% (61/85)   Writing objects:  72% (62/85)   Writing objects:  74% (63/85)   Writing objects:  75% (64/85)   Writing objects:  76% (65/85)   Writing objects:  77% (66/85)   Writing objects:  78% (67/85)   Writing objects:  80% (68/85)   Writing objects:  81% (69/85)   Writing objects:  82% (70/85)   Writing objects:  83% (71/85)   Writing objects:  84% (72/85)   Writing objects:  85% (73/85)   Writing objects:  87% (74/85)   Writing objects:  88% (75/85)   Writing objects:  89% (76/85)   Writing objects:  90% (77/85)   Writing objects:  91% (78/85)   Writing objects:  92% (79/85)   Writing objects:  94% (80/85)   Writing objects:  95% (81/85)   Writing objects:  96% (82/85)   Writing objects:  97% (83/85)   Writing objects:  98% (84/85)   Writing objects: 100% (85/85)   Writing objects: 100% (85/85), 608.55 KiB | 5.34 MiB/s, done.
+Total 85 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/4)   [Kremote: Resolving deltas:  25% (1/4)   [Kremote: Resolving deltas:  75% (3/4)   [Kremote: Resolving deltas: 100% (4/4)   [Kremote: Resolving deltas: 100% (4/4), done.[K
+To github.com:dan-reznik/Collatz-Sequences.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;/home/dreznik/Dropbox/Data Science/R Projects/Collatz]0;dreznik@dreznik-ubuntu-01: ~/Dropbox/Data Science/R Projects/Collatz[01;32mdreznik@dreznik-ubuntu-01[00m:[01;34m~/Dropbox/Data Science/R Projects/Collatz[00m$ git add .

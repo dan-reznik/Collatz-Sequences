@@ -5,16 +5,16 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "744840661",
     "id" : "A94BAEB5",
-    "lastKnownWriteTime" : 1555788234,
-    "last_content_update" : 1555788234916,
+    "lastKnownWriteTime" : 1555788887,
+    "last_content_update" : 1555788887580,
     "path" : "~/Dropbox/Data Science/R Projects/Collatz/README.Rmd",
     "project_path" : "README.Rmd",
     "properties" : {
         "chunk_output_type" : "inline",
-        "cursorPosition" : "108,11",
-        "scrollLine" : "99"
+        "cursorPosition" : "46,78",
+        "scrollLine" : "46"
     },
     "relative_order" : 1,
     "source_on_save" : false,

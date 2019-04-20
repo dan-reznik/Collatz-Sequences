@@ -1,7 +1,21 @@
 Collatz Sequences
 ================
 Dan Reznik
-April, 2019
+April 2019
+
+A Collatz *Sequence* starts with N, a positive integer. Each term is obtained from the previous term as follows:
+
+-   If the current term is even, the next term is one half the previous term.
+-   If the current term is odd, the next term is 3 times the previous term plus 1.
+
+The Collatz *Conjecture* states that no matter what value of n, the sequence will always reach 1, as explained [here](https://en.wikipedia.org/wiki/Collatz_conjecture).
+
+Below we investigate basics of Collatz sequences with starting N from 1 to 10k, namely:
+
+-   for each N calculate the sequence and its length
+-   pick a starting N (e.g, 27) which produces an unusually long sequence
+-   study the distribution of the ratio of seq\_length/N
+-   show the starting N's with largest seq\_length/N ratios
 
 Load libraries
 
@@ -17,10 +31,10 @@ collatz <- function(x,y) if (x%in%c(1L,2L)) done(1L) else if (even(x)) x/2L else
 get_seq_seq <- function(x) (1L:1000L)%>%accumulate(collatz,.init=x)%>%as.integer
 ```
 
-Create data frame of first 10^3 collatz sequences
+Create data frame of first 10^3 collatz sequences, and show them for N=20...30
 
 ``` r
-n_max <- 1e3
+n_max <- 10e3
 df_coll <- tibble(n=1:n_max,
                   coll=n%>%map(get_seq_seq),
                   seq_s=coll%>%map_chr(str_c,collapse=";"),
@@ -89,18 +103,13 @@ df_coll %>%
 
 <img src="README_files/figure-markdown_github/unnamed-chunk-8-1.png" width="100%" style="display: block; margin: auto;" />
 
-Mean of length/n
+Mean and Median of length/n
 
 ``` r
 map2_dbl(df_coll$seq_l,df_coll$n,~.x/.y)%>%mean
-#> [1] 0.2171637
-```
-
-Median of length/n
-
-``` r
+#> [1] 0.04113596
 map2_dbl(df_coll$seq_l,df_coll$n,~.x/.y)%>%median
-#> [1] 0.121413
+#> [1] 0.01740403
 ```
 
 Top ten ratios of sequence lengths by starting N
@@ -127,3 +136,5 @@ df_coll %>%
 |     8|   54|     113|   2.09|      9232| 54;27;82;41;124;62;31;94;47;142;71;214;107;322;161;484;242;121;364;182;91;274;137;412;206;103;310;155;466;233;700;350;175;526;263;790;395;1186;593;1780;890;445;1336;668;334;167;502;251;754;377;1132;566;283;850;425;1276;638;319;958;479;1438;719;2158;1079;3238;1619;4858;2429;7288;3644;1822;911;2734;1367;4102;2051;6154;3077;9232;4616;2308;1154;577;1732;866;433;1300;650;325;976;488;244;122;61;184;92;46;23;70;35;106;53;160;80;40;20;10;5;16;8;4;2;1     |
 |     9|   55|     113|   2.05|      9232| 55;166;83;250;125;376;188;94;47;142;71;214;107;322;161;484;242;121;364;182;91;274;137;412;206;103;310;155;466;233;700;350;175;526;263;790;395;1186;593;1780;890;445;1336;668;334;167;502;251;754;377;1132;566;283;850;425;1276;638;319;958;479;1438;719;2158;1079;3238;1619;4858;2429;7288;3644;1822;911;2734;1367;4102;2051;6154;3077;9232;4616;2308;1154;577;1732;866;433;1300;650;325;976;488;244;122;61;184;92;46;23;70;35;106;53;160;80;40;20;10;5;16;8;4;2;1 |
 |    10|    1|       2|   2.00|         1| 1;1                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+
+Happy Collatzing!
