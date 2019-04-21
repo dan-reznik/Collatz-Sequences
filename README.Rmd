@@ -98,10 +98,23 @@ Plot sequence lengths vs starting N
 
 ```{r}
 df_coll %>%
+  filter(n>1) %>%
   ggplot(aes(n,seq_l)) +
   geom_line(alpha=.2) +
   geom_smooth() +
   labs(x='starting N',y='sequence length')
+```
+
+Same with logarithmic N, showing seemingly linear relationship
+
+```{r}
+df_coll %>%
+  filter(n>1) %>%
+  ggplot(aes(n,seq_l)) +
+  geom_line(alpha=.2) +
+  geom_smooth() +
+  scale_x_log10() +
+  labs(x='log(N)',y='sequence length')
 ```
 
 Top ratios of sequence lengths by starting N
@@ -127,7 +140,7 @@ df_coll %>%
                list(~mean,~median))
 ```
 
-Plot density of sequence lengths divided by starting N. Can the mode be computed?
+Plot density of sequence lengths divided by starting N. Conjecture: peak is caused by seemingly linear trend in the seq_l vs log(N) graph.
 
 ```{r,message=F}
 df_coll %>%
@@ -143,7 +156,7 @@ df_coll %>%
 ggsave("pics/steps_required.png",width=10,height=4)
 ```
 
-Same distribution for seq_l/log(N):
+Same distribution for seq_l/log(N). Conjecture: peak(s) are caused by seemingly linear trend in the seq_l vs log(N) graph.
 
 ```{r,message=F}
 df_coll %>%

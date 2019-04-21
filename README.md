@@ -97,6 +97,7 @@ Plot sequence lengths vs starting N
 
 ``` r
 df_coll %>%
+  filter(n>1) %>%
   ggplot(aes(n,seq_l)) +
   geom_line(alpha=.2) +
   geom_smooth() +
@@ -105,6 +106,21 @@ df_coll %>%
 ```
 
 <img src="README_files/figure-markdown_github/unnamed-chunk-8-1.png" width="100%" style="display: block; margin: auto;" />
+
+Same with logarithmic N, showing seemingly linear relationship
+
+``` r
+df_coll %>%
+  filter(n>1) %>%
+  ggplot(aes(n,seq_l)) +
+  geom_line(alpha=.2) +
+  geom_smooth() +
+  scale_x_log10() +
+  labs(x='log(N)',y='sequence length')
+#> `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
+```
+
+<img src="README_files/figure-markdown_github/unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" />
 
 Top ratios of sequence lengths by starting N
 
@@ -146,7 +162,7 @@ df_coll %>%
 #> 1    0.00655           10.3      0.00220             9.50
 ```
 
-Plot density of sequence lengths divided by starting N. Can the mode be computed?
+Plot density of sequence lengths divided by starting N. Conjecture: peak is caused by seemingly linear trend in the seq\_l vs log(N) graph.
 
 ``` r
 df_coll %>%
@@ -158,9 +174,9 @@ df_coll %>%
        y='density')
 ```
 
-<img src="README_files/figure-markdown_github/unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_files/figure-markdown_github/unnamed-chunk-12-1.png" width="100%" style="display: block; margin: auto;" />
 
-Same distribution for seq\_l/log(N):
+Same distribution for seq\_l/log(N). Conjecture: peak(s) are caused by seemingly linear trend in the seq\_l vs log(N) graph.
 
 ``` r
 df_coll %>%
@@ -172,6 +188,6 @@ df_coll %>%
        y='density')
 ```
 
-<img src="README_files/figure-markdown_github/unnamed-chunk-13-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_files/figure-markdown_github/unnamed-chunk-14-1.png" width="100%" style="display: block; margin: auto;" />
 
 Happy Collatzing!
